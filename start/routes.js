@@ -16,4 +16,6 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+Route.get('/', 'WebController.index');
+Route.get('about', 'WebController.getAbout');
+Route.get('contact', 'WebController.getContact');
