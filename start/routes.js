@@ -19,3 +19,5 @@ const Route = use('Route')
 Route.get('/', 'WebController.index');
 Route.get('tentang-kami', 'WebController.getAbout');
 Route.get('kontak-kami', 'WebController.getContact');
+Route.get('karir', 'WebController.getCareer');
+Route.get('layanan', 'WebController.getService');

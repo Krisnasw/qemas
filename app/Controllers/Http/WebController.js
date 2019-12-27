@@ -14,6 +14,14 @@ class WebController {
         return view.render("contact");
     }
 
+    async getCareer({ view }) {
+        return view.render("career");
+    }
+
+    async getService({ view }) {
+        return view.render("service");
+    }
+
 }
 
 module.exports = WebController
