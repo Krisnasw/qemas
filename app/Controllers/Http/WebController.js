@@ -22,6 +22,10 @@ class WebController {
         return view.render("service");
     }
 
+    async getHelp({ view }) {
+        return view.render("faq");
+    }
+
 }
 
 module.exports = WebController
