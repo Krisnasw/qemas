@@ -22,3 +22,4 @@ Route.get('kontak-kami', 'WebController.getContact');
 Route.get('karir', 'WebController.getCareer');
 Route.get('layanan', 'WebController.getService');
 Route.get('bantuan', 'WebController.getHelp');
+Route.get('portfolio', 'WebController.getProject');

@@ -26,6 +26,10 @@ class WebController {
         return view.render("faq");
     }
 
+    async getProject({ view }) {
+        return view.render("portfolio");
+    }
+
 }
 
 module.exports = WebController
