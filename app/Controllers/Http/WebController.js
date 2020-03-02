@@ -1,5 +1,7 @@
 'use strict'
 
+const db = use("Database");
+
 class WebController {
 
     async index({ view }) {
@@ -23,7 +25,8 @@ class WebController {
     }
 
     async getHelp({ view }) {
-        return view.render("faq");
+        const data = await db.table("helps").orderBy("id", "DESC")
+        return view.render("faq", { data: data });
     }
 
     async getProject({ view }) {
